@@ -133,7 +133,3 @@ These controls must be implemented and tested before the application can be cons
 ForecastGuard AI brings together full-stack development, weather-data engineering, statistical analysis, and machine learning to investigate a practical question:
 
 **Can we make weather forecast reliability easier to measure, compare, and understand?**
-
-## 📄 License
-
-A suitable open-source license will be selected after reviewing project dependencies and data-source terms.
