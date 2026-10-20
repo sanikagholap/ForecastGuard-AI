@@ -1,180 +1,139 @@
 # 🌦️ ForecastGuard AI
 
-### Don't Just Check the Forecast. Check Its Reliability.
+### Understand Forecast Accuracy. Discover Weather Reliability.
 
-**An AI-powered weather forecast verification and reliability analysis platform.**
+**An AI-powered platform for weather forecast verification, error analysis, and reliability insights.**
 
-ForecastGuard AI aims to make weather forecast performance easier to understand by comparing archived forecasts with corresponding weather observations, measuring prediction errors, and exploring reliability patterns across locations and forecast horizons.
 
-\<p align="center">
-&#x20; \<strong>Weather Intelligence · Forecast Verification · Machine Learning\</strong>
-\</p>
+## 🌍 The Vision
 
-\<p align="center">
-&#x20; \<img src="[https://img.shields.io/badge/Project-In%20Development-2563EB?style=for-the-badge](https://img.shields.io/badge/Project-In%20Development-2563EB?style=for-the-badge)" alt="Project status">
-&#x20; \<img src="[https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)" alt="Python">
-&#x20; \<img src="[https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB](https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo=react\&logoColor=61DAFB)" alt="React">
-&#x20; \<img src="[https://img.shields.io/badge/Machine%20Learning-Research-6D5BD0?style=for-the-badge](https://img.shields.io/badge/Machine%20Learning-Research-6D5BD0?style=for-the-badge)" alt="Machine learning research">
-\</p>
+Weather forecasts help us plan our day, protect crops, manage transport, and prepare for extreme conditions. But an important question remains:
 
----
+**How reliable was the forecast—and how does that reliability change across locations and prediction horizons?**
 
-## 🌍 The Idea
+ForecastGuard AI is designed to answer this question using historical forecast records, corresponding weather observations, statistical evaluation, and machine learning experiments.
 
-A weather forecast tells us what *might* happen. But how closely have forecasts matched actual weather conditions in the past?
+Rather than generating another weather forecast, the platform focuses on understanding the performance of forecasts that already exist.
 
-ForecastGuard AI focuses on that second question.
+## ✨ Key Features
 
-Instead of building yet another weather application, this project is designed to analyze historical forecast performance, measure forecast errors, and investigate when and where forecasts have been less reliable.
+| Feature | What it does |
+|:--|:--|
+| 🎯 **Forecast Verification** | Compares archived forecasts against appropriately matched reference observations. |
+| 📊 **Error Analytics** | Measures forecast error using MAE, RMSE, and bias. |
+| 📈 **Historical Insights** | Explores how forecast performance changes over time. |
+| 🗺️ **Regional Intelligence** | Visualizes geographical differences in forecast performance. |
+| ⏱️ **Lead-Time Analysis** | Investigates how prediction errors vary with forecast horizon. |
+| 🧠 **ML-Based Error Risk** | Explores whether machine learning can estimate the risk of errors exceeding a defined threshold. |
+| 📉 **Interactive Dashboard** | Brings analysis results together through charts, maps, filters, and tables. |
 
-The goal is to turn historical weather data into **transparent, measurable, and useful insights**.
+*These are planned capabilities. Implementation and model performance will be documented as they are verified.*
 
-## ✨ What Makes It Different?
+## ⚙️ How It Works
 
-\<table>
-\<tr>
-\<td width="50%" valign="top">
-
-### 🎯 Forecast Verification
-
-Compare archived forecasts against appropriately matched weather observations.
-
-\</td>
-\<td width="50%" valign="top">
-
-### 📉 Error Intelligence
-
-Measure forecast errors using statistical metrics such as MAE, RMSE, and bias.
-
-\</td>
-\</tr>
-\<tr>
-\<td width="50%" valign="top">
-
-### 🗺️ Regional Analysis
-
-Explore how forecast performance varies by location, weather variable, and forecast lead time.
-
-\</td>
-\<td width="50%" valign="top">
-
-### 🧠 ML-Based Error Risk
-
-Investigate whether machine learning can estimate the likelihood of forecast errors exceeding a defined threshold.
-
-\</td>
-\</tr>
-\</table>
-
-*These are the intended capabilities; implementation and model performance will be verified during development.*
-
-## 🔬 How It Works
-
-```mermaid
 flowchart TD
-    A["🌦️ Archived Forecast Data"] --> C["Data Collection & Validation"]
-    B["📡 Weather Observations"] --> C
-    C --> D["Time, Location & Lead-Time Matching"]
-    D --> E["Forecast Error Calculation"]
+    A["Archived Forecasts"] --> C["Data Validation"]
+    B["Weather Observations"] --> C
+    C --> D["Match Location, Time and Variable"]
+    D --> E["Calculate Forecast Errors"]
     E --> F["Statistical Evaluation"]
     E --> G["Machine Learning Experiments"]
-    F --> H["Interactive Reliability Dashboard"]
+    F --> H["Reliability Dashboard"]
     G --> H
 ```
 
-The key is **correct verification**: forecasts and observations must refer to the same location, valid time, variable, and appropriate units. The forecast's original issue time and lead time must also be retained.
+The foundation is reliable data matching. Forecasts and reference observations must correspond to the same location, valid time, variable, and compatible units. Forecast issue time and lead time must also be preserved.
 
-## 🧩 Platform Modules
+## 🧠 What Makes This Project Interesting?
 
-| Module                    | Purpose                                                                            |
-| ------------------------- | ---------------------------------------------------------------------------------- |
-| 📊 Reliability Dashboard  | Explore evaluation metrics and historical performance.                             |
-| 🔍 Forecast Analysis      | Compare forecast values with corresponding observations.                           |
-| 📈 Historical Trends      | Analyze error patterns over selected periods.                                      |
-| 🗺️ Regional Explorer     | Visualize geographical differences in forecast performance.                        |
-| 🧠 Error-Risk Experiments | Evaluate models for predicting threshold-based forecast-error risk.                |
-| 🔐 User Access            | Provide login and registration interfaces with secure backend integration planned. |
+- **Evidence over assumptions:** Evaluate forecast performance using historical records instead of unsupported accuracy claims.
+- **Data quality first:** Account for missing values, inconsistent timestamps, and differences between data sources.
+- **Location-aware analysis:** Explore how forecast errors vary across regions and lead times.
+- **Responsible machine learning:** Compare models with baselines and evaluate them using chronological data splits.
+- **Transparent results:** Clearly distinguish forecasts, reference observations, statistical findings, and ML estimates.
 
 ## 🛠️ Technology Stack
 
-\<p>
-&#x20; \<img src="[https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white](https://img.shields.io/badge/Python-3776AB?style=flat-square\&logo=python\&logoColor=white)" alt="Python">
-&#x20; \<img src="[https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white](https://img.shields.io/badge/FastAPI-009688?style=flat-square\&logo=fastapi\&logoColor=white)" alt="FastAPI">
-&#x20; \<img src="[https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB](https://img.shields.io/badge/React-20232A?style=flat-square\&logo=react\&logoColor=61DAFB)" alt="React">
-&#x20; \<img src="[https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square\&logo=typescript\&logoColor=white)" alt="TypeScript">
-&#x20; \<img src="[https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white](https://img.shields.io/badge/Vite-646CFF?style=flat-square\&logo=vite\&logoColor=white)" alt="Vite">
-&#x20; \<img src="[https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white](https://img.shields.io/badge/Pandas-150458?style=flat-square\&logo=pandas\&logoColor=white)" alt="Pandas">
-&#x20; \<img src="[https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white](https://img.shields.io/badge/NumPy-013243?style=flat-square\&logo=numpy\&logoColor=white)" alt="NumPy">
-&#x20; \<img src="[https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square\&logo=scikitlearn\&logoColor=white)" alt="scikit-learn">
-&#x20; \<img src="[https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square\&logo=postgresql\&logoColor=white)" alt="PostgreSQL">
-&#x20; \<img src="[https://img.shields.io/badge/Leaflet-199900?style=flat-square&logo=leaflet&logoColor=white](https://img.shields.io/badge/Leaflet-199900?style=flat-square\&logo=leaflet\&logoColor=white)" alt="Leaflet">
-\</p>
-
-| Layer            | Planned Tools                                           |
-| ---------------- | ------------------------------------------------------- |
-| Frontend         | React, TypeScript, Vite, CSS                            |
-| Visualization    | Recharts, Leaflet                                       |
-| Backend          | Python, FastAPI                                         |
-| Data Engineering | Pandas, NumPy                                           |
-| Machine Learning | scikit-learn                                            |
-| Database         | SQLite for local development; PostgreSQL for production |
-| Testing          | Pytest and frontend testing tools                       |
-| Version Control  | Git and GitHub                                          |
+| Layer | Technologies |
+|:--|:--|
+| Frontend | React · TypeScript · Vite |
+| Visualization | Recharts · Leaflet |
+| Backend | Python · FastAPI |
+| Data Processing | Pandas · NumPy |
+| Machine Learning | scikit-learn |
+| Database | SQLite for development · PostgreSQL planned for production |
+| Testing | Pytest · Frontend testing tools |
+| Version Control | Git · GitHub |
 
 ## 🌐 Data Sources
 
-The project will evaluate suitable data sources based on historical coverage, access conditions, and the availability of comparable records.
+The project will use data sources selected for historical coverage, suitability for forecast verification, and access conditions.
 
-- [Open-Meteo Historical Forecast API](https://open-meteo.com/en/docs/historical-forecast-api) — archived forecasts.
-- [Open-Meteo Previous Runs API](https://open-meteo.com/en/docs/previous-runs-api) — forecasts from previous model runs.
+- [Open-Meteo Historical Forecast API](https://open-meteo.com/en/docs/historical-forecast-api) — archived model forecasts.
+- [Open-Meteo Previous Runs API](https://open-meteo.com/en/docs/previous-runs-api) — historical forecast runs at different lead times.
 - [Open-Meteo Historical Weather API](https://open-meteo.com/en/docs/historical-weather-api) — historical weather and reanalysis data.
 - [India Meteorological Department](https://mausam.imd.gov.in/) — official Indian meteorological resources.
 
-**Data integrity matters:** reanalysis estimates are not equivalent to direct station observations. The platform will identify the reference data used, disclose coverage limitations, and avoid presenting unverified comparisons as ground truth.
+**Data integrity matters.** Reanalysis estimates are not identical to direct station observations. The application will identify the reference source used and communicate data limitations rather than treating every historical value as ground truth.
 
-## 📐 Evaluation Approach
+## 📐 Evaluation Methodology
 
-The project will investigate established metrics:
+| Metric | Purpose |
+|:--|:--|
+| **MAE** | Measures the average absolute forecast error. |
+| **RMSE** | Gives greater weight to larger errors. |
+| **Bias** | Identifies systematic overprediction or underprediction. |
+| **Threshold-Based Error Risk** | Estimates the probability of an error exceeding a specified threshold, if supported by a validated model. |
 
-- **MAE:** average absolute forecast error.
-- **RMSE:** error measure that penalizes larger errors more heavily.
-- **Bias:** systematic overprediction or underprediction.
-- **Threshold-based error risk:** estimated probability that an error exceeds a specified threshold, if supported by validated data and a suitable model.
+Model experiments will use chronological train, validation, and test splits, baseline comparisons, and checks for data leakage. Results will be published only after actual evaluation.
 
-Machine learning experiments will use chronological data splits, appropriate baselines, and leakage checks. Performance metrics will be reported only after actual evaluation.
+## 🏗️ Project Architecture
 
-## 🗺️ Development Roadmap
+```text
+ForecastGuard-AI/
+├── frontend/          # React + TypeScript application
+├── backend/           # FastAPI application and API services
+├── data/              # Data documentation and permitted sample files
+├── notebooks/         # Exploratory analysis and experiments
+├── tests/             # Automated tests
+├── docs/              # Architecture and methodology
+├── .env.example       # Environment variable template
+├── .gitignore
+└── README.md
+```
 
-- [ ] Design and build the responsive frontend.
-- [ ] Implement backend API structure.
-- [ ] Integrate historical forecast and observation sources.
-- [ ] Develop forecast-record matching and data-quality checks.
+*The structure will evolve as the application is implemented.*
+
+## 🚀 Development Roadmap
+
+- [ ] Build the complete responsive frontend.
+- [ ] Develop the FastAPI backend.
+- [ ] Integrate suitable historical weather data sources.
+- [ ] Build the forecast-observation matching pipeline.
 - [ ] Implement statistical forecast verification.
 - [ ] Train and evaluate ML error-risk models.
-- [ ] Integrate the frontend and backend.
-- [ ] Implement and test authentication and security controls.
-- [ ] Add automated tests and technical documentation.
-- [ ] Deploy and validate the application.
+- [ ] Integrate frontend and backend.
+- [ ] Implement authentication and security controls.
+- [ ] Add automated tests and setup documentation.
+- [ ] Deploy the application and validate its behavior.
 
+## 🔐 Security & Reliability Principles
 
+- No committed API keys, passwords, or private credentials.
+- Server-side input validation and authorization.
+- Secure password hashing and session handling.
+- Transparent data-source and coverage information.
+- No fabricated live measurements or model-performance claims.
+- Clear separation between observed data and model estimates.
 
-## 🚀 Project Status
+These controls must be implemented and tested before the application can be considered production-ready.
 
-**Currently in development.**
+## 🎯 Project Goal
 
-The repository will evolve as the frontend, backend, data pipeline, and evaluation methods are implemented. Screenshots, setup instructions, verified results, and a live demo link will be added when available.
+ForecastGuard AI brings together full-stack development, weather-data engineering, statistical analysis, and machine learning to investigate a practical question:
 
-## 👩‍💻 Why This Project?
+**Can we make weather forecast reliability easier to measure, compare, and understand?**
 
-ForecastGuard AI brings together full-stack development, weather-data engineering, statistical evaluation, machine learning, and data visualization in a single applied project.
+## 📄 License
 
-Its central question is simple:
-
-> **How reliable was the forecast—and what does the evidence tell us?**
-
----
-
-\<p align="center">
-&#x20; \<strong>ForecastGuard AI\</strong>\<br>
-&#x20; \<em>Measure the forecast. Understand the error. Explore reliability.\</em>
-\</p>
+A suitable open-source license will be selected after reviewing project dependencies and data-source terms.
